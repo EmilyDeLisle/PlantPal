@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Leckerli+One|Roboto:400,700" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/jquery-ui.min.css">
+      <link rel="stylesheet" href="css/fullcalendar.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+      <script src="js/firebase_init.js"></script>
+      <script src="lib/jquery-3.3.1.min.js"></script>
+      <script src="lib/moment.min.js"></script>
+      <script src="lib/fullcalendar.min.js"></script>
+      <script src="lib/jquery-ui.min.js"></script>
+      <title>PlantPal</title>
+    </head>
+    <body>
+      <!-- Add Plant Modal -->
+      <div class="modal fade" id="addPlantModal" tabindex="-1" role="dialog" aria-labelledby="addPlantModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <form id="addPlant">
+                  <h1>Add a plant</h1>
+                  <div class="form-group">
+                    <label for="plantName">Plant name <span id="noName">Name cannot be blank</span></label>
+                    <input type="text" class="form-control" id="plantName" placeholder="Plant name">
+                  </div>
+                  <div class="form-group">
+                    <label for="datepicker">Last watered <span id="noDate">Date cannot be blank</span><span id="negDate">Date cannot be in the future</span></label>
+                    <input type="text" class="form-control" id="datepicker" size="30" placeholder="Pick a date" readonly="readonly">
+                  </div>
+                  <input type="reset" class="btn btn-secondary" value="Close" id="close">
+                  <input type="reset" class="btn btn-secondary" value="Reset" id="reset">
+                  <input type="submit" class="btn btn-primary" value="Submit" id="submit">
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-light bg-light fixed-top">
+        <h1 class="navbar-brand">PlantPal</h1>
+        <div class="navbar-nav">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addPlantModal" id="add"><i class="fas fa-plus"></i> <span id="addButtonText">Add Plant</span></button>
+          <button type="button" class="btn btn-primary" id="calToggle"><i class="far fa-calendar-alt"></i> <span id="calButtonText">Calendar</span></button>
+          <button type="button" class="btn btn-primary" id="logout"><i class="fas fa-door-open"></i> <span id="logoutButtonText">Logout</span></button>
+        </div>
+      </nav>
+
+      <div class="container" id="plants">
+        <p>Loading...</p>
+      </div>
+      <div class="container">
+        <div id="calendar"></div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <script src="js/plants.js"></script>
+    </body>
+  </html>

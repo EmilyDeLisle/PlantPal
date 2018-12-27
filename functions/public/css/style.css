@@ -1,0 +1,207 @@
+/* Overall */
+body {
+  background-image: url("../imgs/plant_bg.jpg");
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+  padding: 100px 0 50px 0;
+}
+
+button, button:focus, .btn, .btn-focus {
+  outline: 0 !important;
+}
+
+button {
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(78, 214, 142, 0.7) !important;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-nav {
+  display: inline-block;
+}
+
+.navbar-brand {
+  font-family: 'Leckerli One', cursive;
+  font-size: 26pt;
+  color: #61ED2A !important;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.navbar .btn {
+  margin: 0.5em 0.5em;
+  background-color: #61ED2A;
+  border: 2px solid #4FA66D;
+  display: inline-block;
+}
+
+.navbar .btn:hover, .btn:active {
+  background-color: #69EfA8 !important;
+  border: 2px solid #4ED78E !important;
+  outline: 0 !important;
+}
+
+#addButtonText, #calButtonText, #logoutButtonText {
+    display: none;
+  }
+
+@media (min-width: 576px) {
+  #addButtonText, #calButtonText, #logoutButtonText {
+    display: inline;
+  }
+}
+
+/* Modal */
+#negDate, #noDate, #noName {
+  color: #FF0000;
+  font-size: 10pt;
+  display: none;
+}
+
+.modal-body {
+  background-color: #30AD6A;
+  color: #FFF;
+  border: 2px solid #4ED68E;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.modal-body h1 {
+  font-family: 'Leckerli One', cursive;
+  font-size: 26pt;
+  color: #61ED2A !important;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.modal-body .btn {
+  background-color: #61ED2A;
+  border: 2px solid #4FA66D;
+}
+
+.modal-body .btn:hover {
+  background-color: #69EfA8;
+  border: 2px solid #4ED78E;
+}
+
+#ui-datepicker-div {
+  background-color: #30AD6A;
+  border: 2px solid #4ED68E;
+  color: #FFF;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+#ui-datepicker-div .ui-state-default {
+  background-color: #55DF5A;
+  border: 2px solid #4ED68E;
+  color: #FFF;
+}
+
+#ui-datepicker-div .ui-state-default:hover {
+  background-color: #69EfA8;
+}
+
+#ui-datepicker-div .ui-state-highlight {
+  background-color: #82FF4C;
+}
+
+.ui-datepicker-header {
+  background-color: #55DF5A;
+  border: 2px solid #4ED68E;
+  color: #FFF;
+}
+
+/* Body */
+#plants > p {
+  margin-top: 1em;
+  font-size: 25pt;
+  color: #4ED78E;
+}
+
+.col-sm-4 {
+  border: 2px solid rgb(78, 214, 142);
+  /* background: #30AD6A; */
+  background: rgba(48, 173, 106, 0.9);
+  padding: 0;
+  color: #FFF;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+}
+
+.col-sm-4:hover {
+  border: 2px solid #4dea94;
+  background: #47d185;
+  transition: 0.5s;
+}
+
+.col-sm-4 h3 {
+  background-color: rgba(97, 237, 41, 0.5);
+  /* border-radius: 10px 10px 0 0; */
+  font-size: 20pt;
+  padding: 0.5em;
+  box-shadow: 3px 0px 2px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.col-sm-4 p {
+  margin: 1em;
+}
+
+.waterPlant {
+  cursor: pointer;
+  position: absolute;
+  right: 0.5em;
+  top: 0.5em;
+}
+
+.editPlant {
+  cursor: pointer;
+  font-size: 14pt;
+}
+
+/* Calendar */
+#calendar {
+  display: none;
+  padding: 1em;
+  color: #FFF;
+  /* background: #30AD6A; */
+  background: rgba(48, 173, 106, 0.9);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.fc-day, .fc-day-header, .fc, .fc-widget-content, .fc-head-container, .fc-unthemed, .fc-unthemed .fc-popover {
+  border: 1px solid #4ED68E !important;
+}
+
+.fc-today {
+  background: #47D085 !important;
+}
+
+.fc-day-grid-event {
+  background: #61ED2A !important;
+  box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.3);
+}
+
+.fc-content, .fc-day-grid-event {
+  border: none !important;
+}
+
+.fc-event-container {
+  background: #30AD6A;
+}
+
+.fc-header, .fc-widget-header, .fc-unthemed .fc-popover .fc-header {
+  background: #55DF5A;
+}
+
+.fc-state-default {
+  background-image: none;
+  background: #61ED2A;
+  border: 2px solid #4FA66D;
+}
+
+.fc-popover {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}

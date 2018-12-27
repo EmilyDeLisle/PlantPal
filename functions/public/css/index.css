@@ -1,0 +1,43 @@
+body {
+  background-image: url("../imgs/monstera_bg.jpg");
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+  background-size: 100%;
+  padding: 10em;
+  color: #FFF;
+}
+
+.col-sm-6 > h1 {
+  font-family: 'Leckerli One', cursive;
+  font-size: 40pt;
+  color: #61ED2A;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#info {
+  padding: 2em;
+  border-radius: 2px;
+}
+
+.col-sm-6 {
+  padding: 2em;
+  background: rgba(48, 173, 106, 0.7);
+  /* box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3) !important; */
+}
+
+.firebaseui-tos {
+  display: none;
+}
+
+button {
+  background-color: #61ED2A !important;
+  border: 2px solid #4FA66D !important;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5) !important;
+  color: #FFF !important;
+}
+
+button:hover, button:active {
+  background-color: #69EfA8 !important;
+  border: 2px solid #4ED78E !important;
+  outline: 0 !important;
+}
