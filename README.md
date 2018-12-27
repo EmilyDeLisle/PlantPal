@@ -12,4 +12,5 @@ Future features planned:
 - Delete plants from home screen
 
 Login page background photo by Annie Spratt on Unsplash
+
 Home page background photo by Bart Zimny on Unsplash
