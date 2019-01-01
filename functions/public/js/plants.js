@@ -150,7 +150,21 @@ retrieveAllPlants();
 
 // Generates a new Date object for today's date
 var today = new Date();
-var todayString = today.getMonth() + 1 + "/" + today.getDate() + "/" + today.getFullYear();
+var todayMonth = today.getMonth() + 1;
+todayMonth = todayMonth.toString();
+
+if (todayMonth.length < 2) {
+  todayMonth = "0" + todayMonth;
+}
+
+var todayDay = today.getDate();
+todayDay = todayDay.toString();
+
+if (todayDay.length < 2) {
+  todayDay = "0" + todayDay;
+}
+
+var todayString = todayMonth + "/" + todayDay +  "/" + today.getFullYear();
 
 // Calculates the days between the last watered date and today
 function calculateDays(date) {
