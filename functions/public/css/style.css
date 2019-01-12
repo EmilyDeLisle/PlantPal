@@ -1,6 +1,10 @@
 /* Overall */
 body {
   background-image: url("../imgs/plant_bg.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-attachment: fixed;
   font-family: 'Roboto', sans-serif;
   padding: 100px 0 50px 0;

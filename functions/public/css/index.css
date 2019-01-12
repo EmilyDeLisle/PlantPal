@@ -1,8 +1,11 @@
 body {
   background-image: url("../imgs/monstera_bg.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-attachment: fixed;
   font-family: 'Roboto', sans-serif;
-  background-size: 1300px;
   margin-top: 2em;
   color: #FFF;
 }
