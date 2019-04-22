@@ -14,6 +14,11 @@ button, button:focus, .btn, .btn-focus {
   outline: 0 !important;
 }
 
+.btn-primary {
+    font-size: 18pt;
+    font-weight: 700;
+}
+
 button {
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
@@ -67,10 +72,13 @@ button {
 }
 
 .modal-body {
-  background-color: #30AD6A;
+  background-color: rgba(48, 173, 106, 0.8);
   color: #FFF;
   border: 2px solid #4ED68E;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+.modal-content {
+  background-color: transparent;
 }
 
 .modal-body h1 {
@@ -117,6 +125,68 @@ button {
   color: #FFF;
 }
 
+/* Plant Info Modal */
+#plantInfoDays {
+  overflow-y: scroll;
+  height: 4em;
+  border: 2px solid #4ED68E;
+  margin: 0;
+}
+
+#plantInfoModal p {
+    margin-bottom: 0.5em;
+}
+
+#plantInfoName {
+  width: 90%;
+}
+
+#plantInfoDays {
+    padding-left: 0.5em;
+}
+
+#editPlant {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 10px 10px 0 0;
+  font-size: 20pt;
+  cursor: pointer;
+}
+
+#editPlantName {
+  display: none;
+  width: 100%;
+  font-size: 21pt;
+}
+
+#confirmEditPlant, #cancelEditPlant, #deletePlant, #deletePlantMessage, #deletePlantConfirmButtons {
+    display: none;
+}
+
+#deletePlantConfirmButtons, #deletePlantMessage {
+    float: right;
+}
+
+#deletePlantMessage {
+    text-align: right;
+    width: 100%;
+}
+
+#deletePlant {
+    float: right;
+}
+
+.deletePlantRed {
+    background-color: #cc3d3d !important;
+    border: 2px solid #a03030 !important;
+}
+
+.deletePlantRed:hover {
+    background-color: #f23535 !important;
+    border: 2px solid #cc3d3d !important;
+}
+
 /* Body */
 #plants > p {
   margin-top: 1em;
@@ -124,9 +194,16 @@ button {
   color: #4ED78E;
 }
 
+.plantTitle {
+  cursor: pointer;
+}
+
+.plantTitle:hover {
+  font-weight: 700;
+}
+
 .col-sm-4 {
   border: 2px solid rgb(78, 214, 142);
-  /* background: #30AD6A; */
   background: rgba(48, 173, 106, 0.9);
   padding: 0;
   color: #FFF;
@@ -142,7 +219,6 @@ button {
 
 .col-sm-4 h3 {
   background-color: rgba(97, 237, 41, 0.5);
-  /* border-radius: 10px 10px 0 0; */
   font-size: 20pt;
   padding: 0.5em;
   box-shadow: 3px 0px 2px rgba(0, 0, 0, 0.3);
@@ -160,17 +236,11 @@ button {
   top: 0.5em;
 }
 
-.editPlant {
-  cursor: pointer;
-  font-size: 14pt;
-}
-
 /* Calendar */
 #calendar {
   display: none;
   padding: 1em;
   color: #FFF;
-  /* background: #30AD6A; */
   background: rgba(48, 173, 106, 0.9);
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }

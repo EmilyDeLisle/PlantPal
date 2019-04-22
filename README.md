@@ -6,10 +6,19 @@ This app allows users to add their houseplants to a database and keep track of t
 
 This app uses Firebase Realtime Database for data management and is served up using Node.js with Express and Firebase Cloud Functions. The calendar runs on the FullCalendar library. Other frameworks used include Bootstrap, jQuery, and jQuery UI.
 
+Update Apr 22, 2019, Version 2.0:
+
+New:
+
+- Plant info popup modal now appears when plant name is clicked. Contains information on past watering events and has edit/delete functions for individual plants
+- Average plant watering interval calculation
+- Edit plant name function
+- Delete plant function
+
 Future features planned:
-- Plant name edit function
-- Quickly add/delete past watering events
-- Delete plants from home screen
+- Add/delete past watering events
+- Undelete plant feature
+- Adjust time period for calculating watering interval
 
 Login page background photo by Annie Spratt on Unsplash
 
